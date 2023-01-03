@@ -22,28 +22,29 @@ I found resources that displayed sprite integration, which meant I could bring i
 ---
 **Issue:**
 
-  my issue was that while I downloaded SFML successfully, the SFML linker support was for x86_64 (or something like that) instead of arm64. In other words,   it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion ((here)[https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c], (here)[https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/], etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
+  my issue was that while I downloaded SFML successfully, the SFML linker support was for x86_64 (or something like that) instead of arm64. In other words,   it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion ([here](https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c), [here](https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/), etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
 
-  So, I had to figure out how to update the SFML compatibility to M1 chip. Fortunately, there was mention of how to do this. This wasn’t a new thing, SFML   + M1 ((here)[https://en.sfml-dev.org/forums/index.php?topic=27867.0], (here)[https://en.sfml-dev.org/forums/index.php?topic=27893.0], (here)[https://www.reddit.com/r/sfml/comments/wg8upl/does_sfml_work_on_m1_mac_how_should_i_go_about/], (here)[https://www.sfml-dev.org/tutorials/2.5/start-osx.php], and (here)[https://www.youtube.com/watch?v=kusRtYC-wj4]), but most of the support was for other IDEs (Visual Studio, Xcode, etc). 
+  So, I had to figure out how to update the SFML compatibility to M1 chip. Fortunately, there was mention of how to do this. This wasn’t a new thing, SFML   + M1 ([here](https://en.sfml-dev.org/forums/index.php?topic=27867.0), [here](https://en.sfml-dev.org/forums/index.php?topic=27893.0), [here](https://www.reddit.com/r/sfml/comments/wg8upl/does_sfml_work_on_m1_mac_how_should_i_go_about/), [here](https://www.sfml-dev.org/tutorials/2.5/start-osx.php), and [here](https://www.youtube.com/watch?v=kusRtYC-wj4)), but most of the support was for other IDEs (Visual Studio, Xcode, etc). 
 
   **Some support articles almost got me there:**
 
-  - SFML and Linux (which performed linking similarly, but I couldn’t figure out how to do the directory pathing it wanted me to do): here 
+  - SFML and Linux (which performed linking similarly, but I couldn’t figure out how to do the directory pathing it wanted me to do): [here](https://www.sfml-dev.org/tutorials/2.5/start-linux.php)
 
   **While other support articles did not:**
 
-  - terrible website that claimed to have the issue solved: here
+  - terrible website that claimed to have the issue solved: [here](https://www.appsloveworld.com/cplus/100/1151/undefined-symbols-for-architecture-arm64-m1-mac)
 
-  - my exact issue on stackoverflow, left unsolved: here
+  - my exact issue on stackoverflow, left unsolved: [here](https://stackoverflow.com/questions/72837742/how-to-correctly-link-sfml-3-0-0-for-m1-mac-and-clion-via-cmake)
 
-  - a similar issue on stackoverflow, left unsolved: here 
+  - a similar issue on stackoverflow, left unsolved: [here](https://stackoverflow.com/questions/74563403/sfml-not-connecting-to-clion)
 
   **Finally, I found a video that did work:**
 
-  - (here)[https://www.youtube.com/watch?v=zjv4aGzFous]
+  - [here](https://www.youtube.com/watch?v=zjv4aGzFous)
 
   He shows you how to use Homebrew to install SFML, then finds that installation to point your compiler to it when you try to compile/run your C++ program.
   The problem with this is, obviously, this is a complete workaround to CLion and thus you'd just externally use the command line to compile/run your         program. In my case it is doable, but definitely more annoying. 
+  
 ---
 
 Now that we finally got through compiling with C++, M1, and SFML (although without directly using CLion, sad), we are finally getting into general game development and game structure!
