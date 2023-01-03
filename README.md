@@ -24,6 +24,12 @@ I found resources that displayed sprite integration, which meant I could bring i
 
   my issue was that while I downloaded SFML successfully, the SFML linker support was for macOS-x86_64 instead of arm64. In other words, it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion ([here](https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c), [here](https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/), etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
 
+For reference, here is the error I was trying to solve on CLion: 
+'''
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+'''
+
   So, I had to figure out how to update the SFML compatibility to M1 chip. Fortunately, there was mention of how to do this. This wasn’t a new thing, SFML   + M1 ([here](https://en.sfml-dev.org/forums/index.php?topic=27867.0), [here](https://en.sfml-dev.org/forums/index.php?topic=27893.0), [here](https://www.reddit.com/r/sfml/comments/wg8upl/does_sfml_work_on_m1_mac_how_should_i_go_about/), [here](https://www.sfml-dev.org/tutorials/2.5/start-osx.php), and [here](https://www.youtube.com/watch?v=kusRtYC-wj4)), but most of the support was for other IDEs (Visual Studio, Xcode, etc). 
 
   **Some support articles almost got me there:**
