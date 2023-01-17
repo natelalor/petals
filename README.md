@@ -7,4 +7,4 @@ This project has taught me a lot. I have written about it throughout my process.
 
 Resources that helped me along the way can be found [here](https://docs.google.com/document/d/1mA8vFYgMnoweYxVI6d_WxeV0JTVCUgie8XO4TPth574/edit?usp=sharing). 
 
-_Project Timeline: December 17th, 2022 - January 15th, 2023_
+_Project Timeline: December 17th, 2022 - Present_
