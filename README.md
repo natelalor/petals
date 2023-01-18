@@ -3,7 +3,7 @@ Petals is a game I built using C++ and SFML. I have been interested in learning 
 
 In this game, you have to balance the number of petals you have to keep your flower alive. Using RNG, watering your flower adds petals, and a bee may come at your command to take some petals away.
 
-This project has taught me a lot. I have written about it throughout my process. If you're interested, I will provide a link to my full documentation [here](https://docs.google.com/document/d/1OnkanwgTEmq9fcNMQN6lvr8LENYEdgZLTu6KEbdk1Ik/edit?usp=sharing).
+This project has taught me a lot. I have written about it throughout my process. If you're interested, I will provide a link to my full documentation that is on my website [here](https://www.natelalor.com/article1.html).
 
 Resources that helped me along the way can be found [here](https://docs.google.com/document/d/1mA8vFYgMnoweYxVI6d_WxeV0JTVCUgie8XO4TPth574/edit?usp=sharing). 
 
