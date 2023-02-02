@@ -1,34 +1,34 @@
 #include "bee.h"
 
-
-
-
-Bee::Bee(){
+Bee::Bee()
+{
     // makes the starting position
     sf::Vector2f v1(0, 150);
     position = v1;
 }
 
-sf::Sprite Bee::loadTexture(){
+sf::Sprite Bee::loadTexture()
+{
     sf::Texture beeTexture;
-    if (!beeTexture.loadFromFile("images/wateringcan.png")) {
-        return;
-    }
+
+    // CHANGE TO BEE ONCE YOUVE MADE BEE.PNG
+    beeTexture.loadFromFile("images/flower.png");
+
+    // if (!beeTexture.loadFromFile("images/wateringcan.png")) {
+    //     return;
+    // }
+
     sf::Sprite beeSprite;
     beeSprite.setTexture(beeTexture);
-    beeSprite.setPosition(0, 150);
-
+    // beeSprite.setPosition(0, 150);
     return beeSprite;
 }
 
-    sf::Vector2f Bee::getPosition(){
-        return position;
-    }
-    void Bee::setPosition(sf::Vector2f newLoc){
-        position = newLoc;
-    }
-
-
-
-
-
+sf::Vector2f Bee::getPosition()
+{
+    return position;
+}
+void Bee::setPosition(sf::Vector2f newLoc)
+{
+    position = newLoc;
+}

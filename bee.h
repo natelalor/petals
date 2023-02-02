@@ -5,6 +5,7 @@ private:
     int numHoney;
     int petalsTaken;
     sf::Vector2f position;
+    sf::Sprite beeSprite;
     
 
 
@@ -14,4 +15,6 @@ public:
     sf::Vector2f getPosition();
     void setPosition(sf::Vector2f);
 
+
 };
+

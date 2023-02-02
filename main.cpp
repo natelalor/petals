@@ -1,10 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <iostream>
-#include "bee.h"
+#include "bee.cpp"
 
 using namespace std;
-
 
 //
 int main()
@@ -13,7 +12,6 @@ int main()
 
     sf::Sprite beeSprite;
     beeSprite = bee1.loadTexture();
-
 
     float windowHeight = 990;
     float windowWidth = 1400;
@@ -131,10 +129,10 @@ int main()
 
         window.clear();
         window.draw(backgroundSprite);
-        window.draw(flowerSprite);
+        // window.draw(flowerSprite);
         window.draw(beeSprite);
-        window.draw(wateringCanSprite);
-        window.draw(honeyPileOneSprite);
+        // window.draw(wateringCanSprite);
+        // window.draw(honeyPileOneSprite);
         // window.draw(honeyPileTwoSprite);
         // window.draw(honeyPileThreeSprite);
         // window.draw(honeyPileFourSprite);
